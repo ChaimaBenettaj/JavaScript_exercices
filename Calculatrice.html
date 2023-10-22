@@ -1,0 +1,84 @@
+<html>
+<head>
+
+</head>
+<body align="center">
+
+    <br>
+    <form action="" method="">
+        <script>
+		    document.write("Entrez le nombre 1 :");
+	    </script>
+        <input type="text" id="nbr1">  </input>
+        <br> 
+        <script>
+	    	document.write("Entrez le nombre 2 :");
+	    </script>
+        <input type="text" id="nbr2">  </input>
+        <br>
+        <br>
+        <script>
+		    document.write("Choisissez une operation :");
+	    </script>
+
+        <input type="button" value="addition"  
+        onclick="var x=document.getElementById('nbr1').value;
+                 var y=document.getElementById('nbr2').value;
+                 var res=x+y;
+                 document.write(res);"
+        >
+        </input>
+
+        <input type="button" value="soustraction" 
+        onclick="var x=parseFloat(document.getElementById('nbr1').value);
+                 var y=parseFloat(document.getElementById('nbr2').value);
+                 var res=x-y;
+                 document.write(res);"
+        >
+        </input>
+
+        <input type="button" value="multiplication" 
+        onclick="var x=parseFloat(document.getElementById('nbr1').value);
+                 var y=parseFloat(document.getElementById('nbr2').value);
+                 var res=x*y;
+                 document.write(res);"
+        >
+        </input>
+
+        <input type="button" value="division" 
+        onclick="var x=parseFloat(document.getElementById('nbr1').value);
+                 var y=parseFloat(document.getElementById('nbr2').value);
+                 var res=x/y;
+                 document.write(res);"
+        >
+        </input>
+    </form>
+
+
+
+    <!--
+    <br><br>
+    <p>Le résultat de l'addition est :</p>
+    <p id="a">Le résultat est :</p> 
+    <script>
+        document.getElementById("a").innerHTML= x+y ;
+    </script>
+    <p>Le résultat de la soustraction est :</p>
+    <p id="s">Le résultat est :</p>
+    <script>
+        document.getElementById("s").innerHTML= x-y ;
+    </script>
+    <p>Le résultat de la multiplication est :</p>
+    <p id="m">Le résultat est :</p>
+    <script>
+        document.getElementById("m").innerHTML= x*y ;
+    </script>
+    <p>Le résultat de la division est :</p>
+    <p id="d">Le résultat est :</p>
+    <script>
+        document.getElementById("d").innerHTML= x/y ;
+    </script>
+    -->
+
+</body>
+</html>

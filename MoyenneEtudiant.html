@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Calculer la moyenne d'un étudiant</title>
+</head>
+<body>
+
+    <form action="" method="">
+        <script>
+		    document.write("Note obtenue en MATHS :");
+	    </script>
+        <input type="text" id="nbr1">  </input>
+        <br> 
+        <script>
+	    	document.write("Note obtenue en PC :");
+	    </script>
+        <input type="text" id="nbr2">  </input>
+        <br>
+        <script>
+		    document.write("Note obtenue en INFORMATIQUE :");
+	    </script>
+        <input type="text" id="nbr3">  </input>
+        <br> 
+        <script>
+		    document.write("Note obtenue en SVT :");
+	    </script>
+        <input type="text" id="nbr4">  </input>
+        <br> 
+
+        <script>
+            function moyenne(note){
+                let a=note.maths ;
+                let b=note.pc ;
+                let c=note.info ;
+                let d=note.svt
+                let m=a+b+c+d ;
+                return m/4 ;
+            }
+        </script>
+        <input type="button" value="Calculer la moyenne"  
+        onclick="let note={maths:parseFloat(document.getElementById('nbr1').value),
+                           pc:parseFloat(document.getElementById('nbr2').value),
+                           info:parseFloat(document.getElementById('nbr3').value),
+                           svt:parseFloat(document.getElementById('nbr4').value)} ;
+                 document.write(moyenne(note));"
+        >
+        </input>
+    </form>
+
+</body>
+</html>
