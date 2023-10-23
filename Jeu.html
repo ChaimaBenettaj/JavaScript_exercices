@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Jeu hazard</title>
+</head>
+<body align="center">
+
+    <br><br>
+    <input type="button" value="Jouer" onclick="jouer()">
+    <br>
+
+    <script>
+        function jouer(){
+            let a,b,c ;
+            a = Math.floor(Math.random()*10);
+            b = Math.floor(Math.random()*10);
+            c = Math.floor(Math.random()*10);
+            if (a==b && b==c) return alert("Felicitation, vous avez gagne !");
+            else return alert("Ouups, vous avez perdu !" + "\n nombre 1 : " +a+ "\n nombre 2 : " +b+
+                              "\n nombre 3 : " +c);
+        }
+        
+    </script>
+
+</body>
+</html>
